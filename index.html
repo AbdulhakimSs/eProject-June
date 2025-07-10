@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Watch Company | Luxury Timepieces</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Icon Headers */
+.icon-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c3e50;
+}
+
+/* Button with Icon */
+.btn-download {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #2980b9;
+}
+
+/* Animated Icon */
+.fa-spin-hover:hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* List with Icons */
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.icon-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-list .fa-check {
+  color: #27ae60;
+}
+
+.icon-list .fa-times {
+  color: #e74c3c;
+}
+		/*Edited 27062025*/
+		
+/* CSS Variables for Consistent Design */
+        :root {
+            /* Typography */
+            --ff-heading: 'Playfair Display', serif;
+            --ff-body: 'Poppins', sans-serif;
+            
+            /* Font Sizes */
+            --fs-xs: 0.75rem;
+            --fs-sm: 0.875rem;
+            --fs-base: 1rem;
+            --fs-md: 1.125rem;
+            --fs-lg: 1.5rem;
+            --fs-xl: 2rem;
+            --fs-xxl: 3rem;
+            --fs-xxxl: 4rem;
+            
+            /* Colors */
+            --clr-primary: #2c3e50;
+            --clr-secondary: #3498db;
+            --clr-accent: #e74c3c;
+            --clr-light: #ecf0f1;
+            --clr-dark: #2c3e50;
+            --clr-text: #34495e;
+            --clr-success: #27ae60;
+            --clr-warning: #f39c12;
+            
+            /* Spacing */
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-xxl: 3rem;
+            
+            /* Borders */
+            --border-radius: 4px;
+            --border: 1px solid rgba(0,0,0,0.1);
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--ff-body);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--clr-text);
+            background-color: var(--clr-light);
+            padding: var(--spacing-xl);
+        }
+        
+        /* Typography System */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--ff-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            color: var(--clr-primary);
+        }
+        
+        h1 {
+            font-size: var(--fs-xxxl);
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: var(--fs-xxl);
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: var(--fs-xl);
+            font-weight: 600;
+        }
+        
+        h4 {
+            font-size: var(--fs-lg);
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: var(--spacing-md);
+            max-width: 65ch;
+        }
+        
+        .lead {
+            font-size: var(--fs-md);
+            font-weight: 300;
+            font-style: italic;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        /* Font Weights */
+        .fw-light {
+            font-weight: 300;
+        }
+        
+        .fw-regular {
+            font-weight: 400;
+        }
+        
+        .fw-medium {
+            font-weight: 500;
+        }
+        
+        .fw-semibold {
+            font-weight: 600;
+        }
+        
+        .fw-bold {
+            font-weight: 700;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-xl);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            padding: var(--spacing-lg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-family: var(--ff-body);
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--clr-secondary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--clr-secondary);
+            color: var(--clr-secondary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--clr-secondary);
+            color: white;
+        }
+        
+        /* Utility Classes */
+        .mt-sm { margin-top: var(--spacing-sm); }
+        .mt-md { margin-top: var(--spacing-md); }
+        .mt-lg { margin-top: var(--spacing-lg); }
+        .mt-xl { margin-top: var(--spacing-xl); }
+        
+        .mb-sm { margin-bottom: var(--spacing-sm); }
+        .mb-md { margin-bottom: var(--spacing-md); }
+        .mb-lg { margin-bottom: var(--spacing-lg); }
+        .mb-xl { margin-bottom: var(--spacing-xl); }
+        
+        .py-sm { padding-top: var(--spacing-sm); padding-bottom: var(--spacing-sm); }
+        .py-md { padding-top: var(--spacing-md); padding-bottom: var(--spacing-md); }
+        .py-lg { padding-top: var(--spacing-lg); padding-bottom: var(--spacing-lg); }
+        .py-xl { padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl); }
+        
+        .bg-light { background-color: var(--clr-light); }
+        .bg-dark { background-color: var(--clr-dark); color: white; }
+        
+        /* Blockquote */
+        blockquote {
+            border-left: 4px solid var(--clr-secondary);
+            padding-left: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            font-style: italic;
+            font-weight: 300;
+        }
+        
+        blockquote footer {
+            font-weight: 500;
+            font-style: normal;
+            margin-top: var(--spacing-sm);
+        }
+        
+        /* Highlight */
+        .highlight {
+            background: linear-gradient(120deg, rgba(231,76,60,0.2) 0%, rgba(231,76,60,0.2) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 90%;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            :root {
+                --fs-xxxl: 3rem;
+                --fs-xxl: 2.25rem;
+                --fs-xl: 1.75rem;
+                --fs-lg: 1.25rem;
+            }
+            
+            body {
+                padding: var(--spacing-md);
+            }
+        }
+		/*Edited 27062025*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a202c;
+            --secondary: #c9a769;
+            --accent: #8b0000;
+            --light: #f8f5f0;
+            --dark: #14181f;
+            --gray: #e2e2e2;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary);
+            background-color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Header Styles */
+        header {
+            background: rgba(26, 32, 44, 0.95);
+            padding: 15px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--secondary), #b8860b);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(201, 167, 105, 0.5);
+        }
+
+        .logo i {
+            font-size: 32px;
+            color: white;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        /* Visitor Counter */
+        .visitor-counter {
+            color: var(--secondary);
+            font-size: 14px;
+            font-weight: 500;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        nav ul li a i {
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a.active {
+            color: var(--secondary);
+        }
+
+        nav ul li a.active::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background: white;
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(20, 24, 31, 0.8), rgba(20, 24, 31, 0.9)), url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            border: 2px solid var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--secondary);
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            color: #555;
+        }
+
+        /* Categories */
+        .categories {
+            background: white;
+        }
+
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .category-card {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-img {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .category-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .category-card:hover .category-img img {
+            transform: scale(1.1);
+        }
+
+        .category-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .category-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .category-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Products */
+        .products {
+            background: #f9f9f9;
+        }
+
+        .product-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 2px solid var(--secondary);
+            color: var(--primary);
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-img {
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 32, 44, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+
+        .quick-view {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .quick-view:hover {
+            background: #b8860b;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .product-info .brand {
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .product-info .price {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Technology Section */
+        .technology {
+            background: linear-gradient(rgba(26, 32, 44, 0.9), rgba(26, 32, 44, 0.9)), url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-4.0.3') center/cover;
+            color: white;
+        }
+
+        .technology .section-title h2,
+        .technology .section-title p {
+            color: white;
+        }
+
+        .tech-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .tech-image {
+            flex: 1 1 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .tech-image img {
+            width: 100%;
+            display: block;
+        }
+
+        .tech-details {
+            flex: 1 1 400px;
+        }
+
+        .tech-details h3 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--secondary);
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-list i {
+            color: var(--secondary);
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        /* Store Locator */
+        .store-locator {
+            background: white;
+        }
+
+        .locator-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .store-list {
+            flex: 1 1 300px;
+        }
+
+        .store-item {
+            padding: 20px;
+            border-bottom: 1px solid var(--gray);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .store-item:hover, .store-item.active {
+            background: #f5f5f5;
+        }
+
+        .store-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .store-map {
+            flex: 1 1 500px;
+            height: 500px;
+            background: var(--gray);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Support Section */
+        .support {
+            background: #f9f9f9;
+        }
+
+        .support-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .support-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .support-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .support-card i {
+            font-size: 48px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .support-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        /* Gallery */
+        .gallery {
+            background: white;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 32, 44, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 36px;
+        }
+
+        /* About & Contact */
+        .about-contact {
+            background: linear-gradient(to right, var(--primary), var(--dark));
+            color: white;
+            padding: 100px 5%;
+        }
+
+        .ac-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .about, .contact {
+            flex: 1 1 500px;
+        }
+
+        .ac-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .ac-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+        }
+
+        .about p {
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .contact-info i {
+            color: var(--secondary);
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 30px 5% 70px;
+            position: relative;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col {
+            flex: 1 1 250px;
+        }
+
+        .footer-col h4 {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Scrolling Ticker */
+        .ticker {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--accent);
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        .ticker-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 10;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .modal-image {
+            flex: 1 1 400px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .modal-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-details {
+            flex: 1 1 400px;
+            padding: 40px;
+        }
+
+        .modal-details h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .modal-details .brand {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .modal-details .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+
+        .modal-details .description {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .specs {
+            margin-bottom: 30px;
+        }
+
+        .specs h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .spec-list {
+            list-style: none;
+            columns: 2;
+        }
+
+        .spec-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .spec-list i {
+            color: var(--secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            nav ul {
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                position: fixed;
+                top: 100px;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                padding: 20px;
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                z-index: 1000;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .mobile-menu.active {
+                display: flex;
+            }
+            
+            .mobile-menu a {
+                color: white;
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 5px;
+                transition: var(--transition);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .mobile-menu a:hover, .mobile-menu a.active {
+                background: rgba(201, 167, 105, 0.2);
+                color: var(--secondary);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 80%;
+                max-width: 300px;
+                margin: 15px auto;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+            
+            .modal-body {
+                flex-direction: column;
+            }
+            
+            .modal-image {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .visitor-counter {
+                font-size: 12px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="logo-text"><span>Alberto Watch Company</span></div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-section="home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" data-section="products"><i class="fas fa-shopping-bag"></i> Products</a></li>
+                <li><a href="#" data-section="technology"><i class="fas fa-microchip"></i> Technology</a></li>
+                <li><a href="#" data-section="store-locator"><i class="fas fa-map-marker-alt"></i> Store Locator</a></li>
+                <li><a href="#" data-section="support"><i class="fas fa-headset"></i> Support</a></li>
+                <li><a href="#" data-section="gallery"><i class="fas fa-images"></i> Gallery</a></li>
+            </ul>
+        </nav>
+        
+        <div class="visitor-counter">
+            <i class="fas fa-users"></i>
+            <span id="visitor-count">1</span> Visitors
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="active" data-section="home"><i class="fas fa-home"></i> Home</a>
+        <a href="#" data-section="products"><i class="fas fa-shopping-bag"></i> Products</a>
+        <a href="#" data-section="technology"><i class="fas fa-microchip"></i> Technology</a>
+        <a href="#" data-section="store-locator"><i class="fas fa-map-marker-alt"></i> Store Locator</a>
+        <a href="#" data-section="support"><i class="fas fa-headset"></i> Support</a>
+        <a href="#" data-section="gallery"><i class="fas fa-images"></i> Gallery</a>
+        <a href="#" data-section="about-contact"><i class="fas fa-info-circle"></i> About & Contact</a>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Timeless Elegance, Modern Precision</h1>
+            <p>Alberto Watch Company offers the finest selection of luxury timepieces, watch repair, and appraisal services with unparalleled expertise.</p>
+            <a href="#" class="btn" data-section="products">Explore Collection</a>
+            <a href="#" class="btn btn-outline" data-section="store-locator">Find a Store</a>
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="section-title">
+            <h2>Our Collections</h2>
+            <p>Discover our exquisite range of timepieces curated for every occasion and style</p>
+        </div>
+        
+        <div class="category-container">
+            <div class="category-card" data-category="vintage">
+                <div class="category-img">
+                    <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3"  alt="Vintage Collection">
+                </div>
+                <div class="category-content">
+                    <h3>Vintage</h3>
+                    <p>Classic timepieces with historical charm and timeless appeal</p>
+                </div>
+            </div>
+            
+            <div class="category-card" data-category="luxury">
+                <div class="category-img">
+                    <img src="https://images.unsplash.com/photo-1612786143266-b0363a2f9ca1?ixlib=rb-4.0.3"   alt="Luxury Collection">
+                </div>
+                <div class="category-content">
+                    <h3>Luxury</h3>
+                    <p>Exquisite craftsmanship and premium materials for the discerning</p>
+                </div>
+            </div>
+            
+            <div class="category-card" data-category="smart">
+                <div class="category-img">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3"  alt="Smart Watches">
+                </div>
+                <div class="category-content">
+                    <h3>Smart Watches</h3>
+                    <p>Cutting-edge technology meets modern design and functionality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-title">
+            <h2>Featured Timepieces</h2>
+            <p>Explore our curated selection of premium watches from leading brands</p>
+        </div>
+        
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">All Watches</button>
+            <button class="filter-btn" data-filter="rolex">Rolex</button>
+            <button class="filter-btn" data-filter="michael-kors">Michael Kors</button>
+            <button class="filter-btn" data-filter="citizen">Citizen Eco-Drive</button>
+            <button class="filter-btn" data-filter="bulova">Bulova</button>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+    
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="section-title">
+            <h2>Innovative Watch Technology</h2>
+            <p>Discover the precision engineering behind our exceptional timepieces</p>
+        </div>
+        
+        <div class="tech-content">
+            <div class="tech-image">
+                <img src="https://images.unsplash.com/photo-1585123334904-845d60e97b29?ixlib=rb-4.0.3" alt="Watch Technology">
+            </div>
+            <div class="tech-details">
+                <h3>Precision Engineering</h3>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <div>
+                            <h4>Swiss Movement</h4>
+                            <p>Our luxury watches feature precision Swiss movements known for accuracy and reliability</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-sun"></i>
+                        <div>
+                            <h4>Eco-Drive Technology</h4>
+                            <p>Citizen Eco-Drive converts any light source into energy, eliminating battery changes</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-water"></i>
+                        <div>
+                            <h4>Water Resistance</h4>
+                            <p>Advanced sealing techniques ensure water resistance up to 300 meters</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-gem"></i>
+                        <div>
+                            <h4>Premium Materials</h4>
+                            <p>We use only the finest materials including sapphire crystal, ceramic, and titanium</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Store Locator Section -->
+    <section class="store-locator" id="store-locator">
+        <div class="section-title">
+            <h2>Find Our Stores</h2>
+            <p>Visit our boutiques for a personalized experience with our watch experts</p>
+        </div>
+        
+        <div class="locator-container">
+            <div class="store-list">
+                <div class="store-item active" data-location="new-york">
+                    <h4>Village Mall</h4>
+                    <p>Bugolobi, Luthuli Avenue, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 778 100 001</p>
+                </div>
+                <div class="store-item" data-location="london">
+                    <h4>Kampala Boulevard</h4>
+                    <p>Kampala Rd, Kampala, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 778 100 001</p>
+                </div>
+                <div class="store-item" data-location="paris">
+                    <h4>Two Rivers Mall</h4>
+                    <p>Limuru Rd, Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 778 100 001</p>
+                </div>
+                <div class="store-item" data-location="tokyo">
+                    <h4>Masterpiece Mall</h4>
+                    <p>KN 5 Rd, Kigali, Rwanda</p>
+                    <p><i class="fas fa-phone"></i> +250 778 100 001</p>
+                </div>
+            </div>
+            <div class="store-map" id="store-map">
+                <!-- Map will be displayed here -->
+				<a href="Google Maps.html"></a>
+                <div style="width: 100%; height: 100%; background: #e9e9e9; display: flex; align-items: center; justify-content: center; color: #666; font-size: 1.2rem;">
+                    <div style="text-align: center; padding: 20px;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 48px; margin-bottom: 20px; color: var(--accent);"></i>
+                        <p>Store location map will be displayed here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Support Section -->
+    <section class="support" id="support">
+        <div class="section-title">
+            <h2>Customer Support</h2>
+            <p>Our dedicated team is here to assist with all your watch needs</p>
+        </div>
+        
+        <div class="support-container">
+            <div class="support-card">
+                <i class="fas fa-tools"></i>
+                <h3>Watch Repair</h3>
+                <p>Expert repair services for all types of watches, from vintage to modern timepieces</p>
+            </div>
+            
+            <div class="support-card">
+                <i class="fas fa-search-dollar"></i>
+                <h3>Appraisal</h3>
+                <p>Professional watch appraisal services for insurance, sale, or personal valuation</p>
+            </div>
+            
+            <div class="support-card">
+                <i class="fas fa-headset"></i>
+                <h3>Customer Service</h3>
+                <p>24/7 customer support for all your inquiries and assistance needs</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-title">
+            <h2>Our Gallery</h2>
+            <p>Explore the craftsmanship and beauty of our timepieces</p>
+        </div>
+        
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3" alt="Luxury Watch">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3"  alt="Vintage Watch">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1612786143266-b0363a2f9ca1?ixlib=rb-4.0.3" alt="Modern Watch">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3" alt="Smart Watch">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2F0Y2h8ZW58MHx8MHx8fDA%3D" alt="Watch Collection">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.istockphoto.com/id/1470966232/photo/spare-parts-for-old-wristwatch-on-wooden-table.jpg?s=612x612&w=0&k=20&c=jklYY76pueP4iUBHsWAi2CpDnZEcksHWjHYdtL6DXko=" alt="Watch Workshop">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About & Contact Section -->
+    <section class="about-contact" id="about-contact">
+        <div class="ac-container">
+            <div class="about">
+                <h3 class="ac-title">About Alberto Watch Company</h3>
+                <p>Founded in 1985, Alberto Watch Company has been a trusted name in luxury timepieces for over three decades. We specialize in watch repair, appraisal, and retail of the finest selection of luxury watches.</p>
+                <p>Our flagship store in Kampala, Uganda offers an unparalleled shopping experience with expert staff who are passionate about horology. We carry a wide selection of brand new watches from Michael Kors, Rolex, Citizen Eco-Drive, Bulova, and other premium brands.</p>
+                <p>At Alberto Watch Company, we believe that a fine timepiece is more than just an accessory - it's a legacy to be passed down through generations.</p>
+            </div>
+            
+            <div class="contact">
+                <h3 class="ac-title">Contact Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Main Store</h4>
+                            <p>Kampala Rd, Kampala, Uganda</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+256 778 100 001</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@albertowatch.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday-Saturday: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 6:00 PM</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Alberto Watch Co.</h4>
+                <p>Your trusted partner for luxury timepieces since 1985. Offering premium watches, expert repair, and professional appraisal services.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-section="home">Home</a></li>
+                    <li><a href="#" data-section="products">Products</a></li>
+                    <li><a href="#" data-section="store-locator">Store Locator</a></li>
+                    <li><a href="#" data-section="support">Support</a></li>
+                    <li><a href="#" data-section="gallery">Gallery</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Brands</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Rolex</a></li>
+                    <li><a href="#">Michael Kors</a></li>
+                    <li><a href="#">Citizen Eco-Drive</a></li>
+                    <li><a href="#">Bulova</a></li>
+                    <li><a href="#">Other Brands</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Watch Repair</a></li>
+                    <li><a href="#">Appraisal Services</a></li>
+                    <li><a href="#">Battery Replacement</a></li>
+                    <li><a href="#">Watch Restoration</a></li>
+                    <li><a href="#">Customization</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Alberto Watch Company. All rights reserved. | Crafted with precision and passion</p>
+        </div>
+    </footer>
+    
+    <!-- Scrolling Ticker -->
+    <div class="ticker">
+        <div class="ticker-content" id="ticker">
+            <!-- Ticker content will be updated by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeModal">&times;</div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Watch">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <span class="brand" id="modalBrand"></span>
+                    <div class="price" id="modalPrice"></div>
+                    <p class="description" id="modalDescription"></p>
+                    
+                    <div class="specs">
+                        <h3>Specifications</h3>
+                        <ul class="spec-list" id="modalSpecs">
+                            <!-- Specs will be populated by JS -->
+                        </ul>
+                    </div>
+                    
+                    <button class="btn" style="margin-top: 20px;">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Data for products
+        const products = [
+            {
+                id: 1,
+                name: "Submariner Date",
+                brand: "Rolex",
+                price: "Ugx 34,246,672",
+                category: "luxury",
+                image: "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3",
+                description: "The Rolex Submariner is the reference among divers' watches. Launched in 1953, it was the first wristwatch waterproof to a depth of 100 meters.",
+                specs: [
+                    "Movement: Automatic",
+                    "Case: Oyster, 41mm, Oystersteel",
+                    "Bezel: Ceramic, unidirectional rotatable",
+                    "Water resistance: 300 meters",
+                    "Crystal: Scratch-resistant sapphire",
+                    "Power reserve: 70 hours"
+                ]
+            },
+            {
+                id: 2,
+                name: "Chronograph",
+                brand: "Michael Kors",
+                price: "Ugx 1,416,485",
+                category: "luxury",
+                image: "https://images.unsplash.com/photo-1612786143266-b0363a2f9ca1?ixlib=rb-4.0.3",
+                description: "The Michael Kors Chronograph watch features a sleek design with precise quartz movement and a sophisticated chronograph function.",
+                specs: [
+                    "Movement: Quartz",
+                    "Case: Stainless steel, 44mm",
+                    "Crystal: Mineral",
+                    "Water resistance: 100 meters",
+                    "Strap: Stainless steel bracelet",
+                    "Features: Chronograph, date display"
+                ]
+            },
+            {
+                id: 3,
+                name: "Eco-Drive Promaster",
+                brand: "Citizen",
+                price: "Ugx 1,524,066",
+                category: "smart",
+                image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3",
+                description: "Citizen Eco-Drive Promaster converts any light into energy, never needs a battery and features a durable titanium case and bracelet.",
+                specs: [
+                    "Movement: Eco-Drive technology",
+                    "Case: Titanium, 44mm",
+                    "Water resistance: 200 meters",
+                    "Crystal: Anti-reflective sapphire",
+                    "Power reserve: 6 months in darkness",
+                    "Features: Date, luminous hands"
+                ]
+            },
+            {
+                id: 4,
+                name: "Marine Star",
+                brand: "Bulova",
+                price: "Ugx 1,255,113",
+                category: "vintage",
+                image: "https://images.unsplash.com/photo-1629581678313-36cf745a9af9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D",
+                description: "The Bulova Marine Star collection features elegant designs inspired by sailing and the sea, with precise Japanese quartz movement.",
+                specs: [
+                    "Movement: Precision Japanese quartz",
+                    "Case: Stainless steel, 42mm",
+                    "Water resistance: 100 meters",
+                    "Crystal: Mineral",
+                    "Strap: Stainless steel bracelet",
+                    "Features: Date, unidirectional bezel"
+                ]
+            },
+            {
+                id: 5,
+                name: "Datejust 41",
+                brand: "Rolex",
+                price: "Ugx 41,956,656",
+                category: "luxury",
+                image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3",
+                description: "The Rolex Datejust is a classic watch of timeless elegance. It has been updated with a 41mm case and the latest generation movements.",
+                specs: [
+                    "Movement: Automatic, Calibre 3235",
+                    "Case: Oyster, 41mm, Everose gold",
+                    "Bezel: Fluted",
+                    "Water resistance: 100 meters",
+                    "Crystal: Scratch-resistant sapphire",
+                    "Power reserve: 70 hours"
+                ]
+            },
+            {
+                id: 6,
+                name: "Corso",
+                brand: "Michael Kors",
+                price: "Ugx 986,160",
+                category: "vintage",
+                image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D",
+                description: "The Michael Kors Corso watch features a sophisticated design with a minimalist dial and a comfortable leather strap.",
+                specs: [
+                    "Movement: Quartz",
+                    "Case: Stainless steel, 40mm",
+                    "Crystal: Mineral",
+                    "Water resistance: 50 meters",
+                    "Strap: Genuine leather",
+                    "Features: Date display"
+                ]
+            }
+        ];
+
+        // DOM Elements
+        const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productGrid = document.querySelector('.product-grid');
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const visitorCount = document.getElementById('visitor-count');
+        const ticker = document.getElementById('ticker');
+        const modal = document.getElementById('productModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBrand = document.getElementById('modalBrand');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalSpecs = document.getElementById('modalSpecs');
+        const storeItems = document.querySelectorAll('.store-item');
+
+        // Initialize visitor count
+        let count = localStorage.getItem('visitorCount') || 1278;
+        count++;
+        localStorage.setItem('visitorCount', count);
+        visitorCount.textContent = count;
+
+        // Ticker content
+        function updateTicker() {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            const timeStr = now.toLocaleTimeString('en-US');
+            
+            // Get location
+            let location = "Kampala, Uganda";
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    position => {
+                        // In a real app, you would reverse geocode to get location name
+                        location = `Lat: ${position.coords.latitude}, Long: ${position.coords.longitude}`;
+                        ticker.textContent = `${dateStr} | ${timeStr} | Your Location: ${location} | Alberto Watch Company - Luxury Timepieces Since 1985`;
+                    },
+                    error => {
+                        ticker.textContent = `${dateStr} | ${timeStr} | Location: Kampala, Uganda | Alberto Watch Company - Luxury Timepieces Since 1985`;
+                    }
+                );
+            } else {
+                ticker.textContent = `${dateStr} | ${timeStr} | Location: Kampala, Uganda | Alberto Watch Company - Luxury Timepieces Since 1985`;
+            }
+        }
+
+        // Generate products
+        function renderProducts(filter = 'all') {
+            productGrid.innerHTML = '';
+            
+            const filteredProducts = filter === 'all' 
+                ? products 
+                : products.filter(product => 
+                    product.brand.toLowerCase().replace(' ', '-') === filter ||
+                    product.category === filter
+                );
+            
+            filteredProducts.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-img">
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-id="${product.id}">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <div class="brand">${product.brand}</div>
+                        <div class="price">${product.price}</div>
+                    </div>
+                `;
+                productGrid.appendChild(productCard);
+            });
+            
+            // Add event listeners to quick view buttons
+            document.querySelectorAll('.quick-view').forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = parseInt(this.getAttribute('data-id'));
+                    const product = products.find(p => p.id === id);
+                    openModal(product);
+                });
+            });
+        }
+
+        // Open modal with product details
+        function openModal(product) {
+            modalImage.src = product.image;
+            modalImage.alt = product.name;
+            modalTitle.textContent = product.name;
+            modalBrand.textContent = product.brand;
+            modalPrice.textContent = product.price;
+            modalDescription.textContent = product.description;
+            
+            // Clear existing specs
+            modalSpecs.innerHTML = '';
+            
+            // Add specs
+            product.specs.forEach(spec => {
+                const li = document.createElement('li');
+                li.innerHTML = `<i class="fas fa-check-circle"></i> ${spec}`;
+                modalSpecs.appendChild(li);
+            });
+            
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModalFunc() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Set active navigation link
+        function setActiveLink(target) {
+            navLinks.forEach(link => {
+                if (link.getAttribute('data-section') === target) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render initial products
+            renderProducts();
+            
+            // Update ticker immediately and every minute
+            updateTicker();
+            setInterval(updateTicker, 60000);
+            
+            // Navigation event listeners
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = this.getAttribute('data-section');
+                    
+                    // Set active link
+                    setActiveLink(target);
+                    
+                    // Scroll to section
+                    scrollToSection(target);
+                    
+                    // Close mobile menu if open
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Filter buttons
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    const filter = this.getAttribute('data-filter');
+                    renderProducts(filter);
+                });
+            });
+            
+            // Category cards
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    setActiveLink('products');
+                    scrollToSection('products');
+                    
+                    // Filter products by category
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    document.querySelector(`.filter-btn[data-filter="${category}"]`).classList.add('active');
+                    renderProducts(category);
+                });
+            });
+            
+            // Store locator items
+            storeItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all items
+                    storeItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                });
+            });
+            
+            // Hamburger menu
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Modal close
+            closeModal.addEventListener('click', closeModalFunc);
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModalFunc();
+                }
+            });
+            
+            // Gallery items
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    // In a real app, this would open a lightbox with the image
+                    alert('Gallery image enlarged view would appear here');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
